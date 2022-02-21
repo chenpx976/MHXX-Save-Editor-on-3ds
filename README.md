@@ -17,3 +17,7 @@ https://github.com/dnasdw/3dstool
 https://github.com/3DSGuy/Project_CTR/releases
 
 https://github.com/Jiapeiyao/MHXX_SaveEditor/blob/master/db/MHXX_item(uni).txt
+
+https://github.com/Asia81/HackingToolkit9DS-Deprecated-
+
+https://geocld.github.io/2020/01/16/rom-hacking/
