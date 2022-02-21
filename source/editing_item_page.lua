@@ -213,6 +213,9 @@ editingItemPage = {
 		{
 			id = 32
 		},
+		{
+			id = 26
+		},
 	},
 	
 	currentIndex_medicAdd = 1,

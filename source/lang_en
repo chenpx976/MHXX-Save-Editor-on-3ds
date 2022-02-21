@@ -396,6 +396,7 @@ editingItemPage.medicAddItemList[5].name = "Adamant Seed"
 editingItemPage.medicAddItemList[6].name = "Max Potion"
 editingItemPage.medicAddItemList[7].name = "Ancient Potion"
 editingItemPage.medicAddItemList[8].name = "Dust of Life"
+editingItemPage.medicAddItemList[9].name = "qianliyan"
 
 editingItemPage.longrangeAddItemList[ 1].name = "Huskberry"
 editingItemPage.longrangeAddItemList[ 2].name = "Bone Husk"
