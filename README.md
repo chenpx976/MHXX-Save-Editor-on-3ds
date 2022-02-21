@@ -21,3 +21,5 @@ https://github.com/Jiapeiyao/MHXX_SaveEditor/blob/master/db/MHXX_item(uni).txt
 https://github.com/Asia81/HackingToolkit9DS-Deprecated-
 
 https://geocld.github.io/2020/01/16/rom-hacking/
+
+数据库: https://github.com/Dawnshifter/MHXXSwitchSaveEditor/blob/master/MHXXSaveEditor/Data/GameConstants.cs
