@@ -143,6 +143,7 @@ editingItemPage = {
 		Font.print(theFont,175,70,TEXT_EDITINGITEMPAGE[1],COLOR_EDITINGITEMPAGE_FONT,TOP_SCREEN)
 		Font.print(theFont,175,110,TEXT_EDITINGITEMPAGE[2],COLOR_EDITINGITEMPAGE_FONT,TOP_SCREEN)
 		Font.print(theFont,175,150,TEXT_EDITINGITEMPAGE[3],COLOR_EDITINGITEMPAGE_FONT,TOP_SCREEN)
+		Font.print(theFont,175,170,"快速添加",COLOR_EDITINGITEMPAGE_FONT,TOP_SCREEN)
 		----下屏
 		display.hint = {
 			{"↑↓",TEXT_MOVE},
@@ -165,7 +166,7 @@ editingItemPage = {
 				end
 			end
 			if pad.isPress(KEY_DDOWN) then
-				if editingItemPage.currentIndex<3 then
+				if editingItemPage.currentIndex<4 then
 					editingItemPage.currentIndex = editingItemPage.currentIndex+1
 				end
 			end
@@ -178,6 +179,17 @@ editingItemPage = {
 				end
 				if editingItemPage.currentIndex==3 then
 					editingItemPage.padLoop_otherAdd()
+				end
+				if editingItemPage.currentIndex==4 then
+					local itemId = keyboard.get('输入物品 id',1,7,ONLY_NUMBER)
+					if itemId~="" then
+						if item.addItemToBox(itemId,99) then
+							item.rewriteItemBox()
+							messageBox.show(TEXT_EDITINGITEMPAGE_ALLADD_O[4],TEXT_OK,TEXT_CANCEL)
+						else
+							messageBox.show(TEXT_EDITINGITEMPAGE_ALLADD_O[5],TEXT_OK,TEXT_CANCEL)
+						end
+					end
 				end
 			end
 			if pad.isPress(KEY_B) then
@@ -215,6 +227,18 @@ editingItemPage = {
 		},
 		{
 			id = 26
+		},
+		{
+			id = 271
+		},
+		{
+			id = 272
+		},
+		{
+			id = 9
+		},
+		{
+			id = 10
 		},
 	},
 	
