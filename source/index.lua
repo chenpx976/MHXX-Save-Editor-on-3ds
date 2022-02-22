@@ -6,7 +6,7 @@ theFont = Font.load(romfsPath.."Deng.ttf")
 Font.setPixelSizes(theFont,12)
 
 
-version = "1.11"
+version = "1.12"
 
 
 COLOR_MAKA = Color.new(0,255,0)
