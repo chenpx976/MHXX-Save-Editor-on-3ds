@@ -181,15 +181,15 @@ editingItemPage = {
 					editingItemPage.padLoop_otherAdd()
 				end
 				if editingItemPage.currentIndex==4 then
-					local itemId = keyboard.get('输入物品 id',1,7,ONLY_NUMBER)
+					local startId = keyboard.get('输入物品 id',,7,ONLY_NUMBER)
 					local itemSize = keyboard.get('输入物品 id',99,7,ONLY_NUMBER)
-					if itemId~="" then
-						if item.addItemToBox(itemId,itemSize) then
-							item.rewriteItemBox()
-							messageBox.show(TEXT_EDITINGITEMPAGE_ALLADD_O[4],TEXT_OK,TEXT_CANCEL)
-						else
-							messageBox.show(TEXT_EDITINGITEMPAGE_ALLADD_O[5],TEXT_OK,TEXT_CANCEL)
+					local endId = startId + 20
+					if startId~="" then
+						for itemId=startId,endId do
+							item.addItemToBox(itemId,itemSize)
 						end
+						item.rewriteItemBox()
+						messageBox.show(TEXT_EDITINGITEMPAGE_ALLADD_O[4],TEXT_OK,TEXT_CANCEL)
 					end
 				end
 			end
