@@ -25,7 +25,7 @@ https://geocld.github.io/2020/01/16/rom-hacking/
 数据库: https://github.com/Dawnshifter/MHXXSwitchSaveEditor/blob/master/MHXXSaveEditor/Data/GameConstants.cs
 
 
-网页版配装地址: https://mhxxdoc.vercel.app/
+网页版配装地址: https://mhxxdoc.vercel.app/index/index.html
 
 android app https://github.com/jestar719/mhgu
 
