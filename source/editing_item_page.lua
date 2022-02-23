@@ -182,7 +182,7 @@ editingItemPage = {
 				end
 				if editingItemPage.currentIndex==4 then
 					local startId = keyboard.get('输入物品 id',1,7,ONLY_NUMBER)
-					local itemSize = keyboard.get('输入物品 id',99,7,ONLY_NUMBER)
+					local itemSize = keyboard.get('输入物品 id',50,7,ONLY_NUMBER)
 					local endId = startId + 20
 					if startId~="" then
 						for itemId=startId,endId do
