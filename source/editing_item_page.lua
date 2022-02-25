@@ -182,9 +182,10 @@ editingItemPage = {
 				end
 				if editingItemPage.currentIndex==4 then
 					local startId = keyboard.get('输入物品 id',1,7,ONLY_NUMBER)
-					local endId = keyboard.get('截止物品 id',startId + 20,7,ONLY_NUMBER)
 					local itemSize = keyboard.get('物品生成个数',50,7,ONLY_NUMBER)
 					if startId~="" then
+						local keyboardEndId = startId + 20
+						local endId = keyboard.get('截止物品 id',keyboardEndId,7,ONLY_NUMBER)
 						for itemId=startId,endId do
 							item.addItemToBox(itemId,itemSize)
 						end
