@@ -403,6 +403,7 @@ editingItemPage.medicAddItemList[9].name = "千里眼"
 editingItemPage.medicAddItemList[9].name = "蜂蜜"
 editingItemPage.medicAddItemList[9].name = "回复药"
 editingItemPage.medicAddItemList[9].name = "回复药G"
+editingItemPage.medicAddItemList[10].name = "高级餐券"
 
 editingItemPage.longrangeAddItemList[ 1].name = "空心果"
 editingItemPage.longrangeAddItemList[ 2].name = "空心骨"
