@@ -143,8 +143,7 @@ editingItemPage = {
 		Font.print(theFont,175,70,TEXT_EDITINGITEMPAGE[1],COLOR_EDITINGITEMPAGE_FONT,TOP_SCREEN)
 		Font.print(theFont,175,110,TEXT_EDITINGITEMPAGE[2],COLOR_EDITINGITEMPAGE_FONT,TOP_SCREEN)
 		Font.print(theFont,175,150,TEXT_EDITINGITEMPAGE[3],COLOR_EDITINGITEMPAGE_FONT,TOP_SCREEN)
-		Font.print(theFont,175,190,"单个添加",COLOR_EDITINGITEMPAGE_FONT,TOP_SCREEN)
-		Font.print(theFont,175,230,"批量添加",COLOR_EDITINGITEMPAGE_FONT,TOP_SCREEN)
+		Font.print(theFont,175,190,"快速添加",COLOR_EDITINGITEMPAGE_FONT,TOP_SCREEN)
 		----下屏
 		display.hint = {
 			{"↑↓",TEXT_MOVE},
@@ -167,7 +166,7 @@ editingItemPage = {
 				end
 			end
 			if pad.isPress(KEY_DDOWN) then
-				if editingItemPage.currentIndex<5 then
+				if editingItemPage.currentIndex<4 then
 					editingItemPage.currentIndex = editingItemPage.currentIndex+1
 				end
 			end
@@ -182,18 +181,9 @@ editingItemPage = {
 					editingItemPage.padLoop_otherAdd()
 				end
 				if editingItemPage.currentIndex==4 then
-					local itemId = keyboard.get('输入物品 id',1,7,ONLY_NUMBER)
-					local itemSize = keyboard.get('输入物品 id',50,7,ONLY_NUMBER)
-					if itemId~="" then
-						item.addItemToBox(itemId,itemSize)
-						item.rewriteItemBox()
-						messageBox.show(TEXT_EDITINGITEMPAGE_ALLADD_O[4],TEXT_OK,TEXT_CANCEL)
-					end
-				end
-				if editingItemPage.currentIndex==5 then
 					local startId = keyboard.get('输入物品 id',1,7,ONLY_NUMBER)
-					local itemSize = keyboard.get('输入物品 id',50,7,ONLY_NUMBER)
-					local endId = startId + 20
+					local endId = keyboard.get('截止物品 id',startId + 20,7,ONLY_NUMBER)
+					local itemSize = keyboard.get('物品生成个数',50,7,ONLY_NUMBER)
 					if startId~="" then
 						for itemId=startId,endId do
 							item.addItemToBox(itemId,itemSize)
@@ -250,9 +240,6 @@ editingItemPage = {
 		},
 		{
 			id = 10
-		},
-		{
-			id = 1772
 		},
 	},
 	
