@@ -391,19 +391,17 @@ editingPalicoPage.objectText[6] = "只打大型"
 
 
 -- Item
-editingItemPage.medicAddItemList[1].name = "鬼人药G"
+editingItemPage.medicAddItemList[1].name = "鬼硬走怪忍消染"
 editingItemPage.medicAddItemList[2].name = "硬化药G"
 editingItemPage.medicAddItemList[3].name = "强走药G"
 editingItemPage.medicAddItemList[4].name = "怪力之种"
 editingItemPage.medicAddItemList[5].name = "忍耐之种"
 editingItemPage.medicAddItemList[6].name = "秘药"
 editingItemPage.medicAddItemList[7].name = "古代秘药"
-editingItemPage.medicAddItemList[8].name = "生命大粉尘"
+editingItemPage.medicAddItemList[8].name = "高级餐券"
 editingItemPage.medicAddItemList[9].name = "千里眼"
-editingItemPage.medicAddItemList[9].name = "蜂蜜"
-editingItemPage.medicAddItemList[9].name = "回复药"
-editingItemPage.medicAddItemList[9].name = "回复药G"
-editingItemPage.medicAddItemList[10].name = "高级餐券"
+editingItemPage.medicAddItemList[10].name = "蜂蜜"
+editingItemPage.medicAddItemList[11].name = "回复药G"
 
 editingItemPage.longrangeAddItemList[ 1].name = "空心果"
 editingItemPage.longrangeAddItemList[ 2].name = "空心骨"
